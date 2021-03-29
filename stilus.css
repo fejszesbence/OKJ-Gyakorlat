@@ -1,0 +1,45 @@
+* {
+    font-family: ariel, sans-serif;
+}
+
+#cim, #TODOcim, #nev {
+    text-align: center;
+}
+
+#urlap {
+    width: 600px;
+    padding: 14px;
+    margin: auto;
+    background-color: #90b0ff;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+}
+
+#TODOcim {
+    margin: 0;
+    grid-column: 1 / span 3;
+}
+
+#TODOadd {
+    background-color: #ffb0ff;
+    color: white;
+    cursor: pointer;
+}
+
+#TODOdatum, #TODOnev, #TODOadd {
+    padding: 10px;
+}
+
+#TODOlista {
+    padding: 0;
+    list-style: none;
+    grid-column: 1 / span 3;
+}
+
+#TODOlista li {
+    display: grid;
+    grid-template-columns: 1fr 1fr 60px 60px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: orange;
+}
