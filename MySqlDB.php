@@ -9,10 +9,15 @@ class MySqlDB {
     private $kapcs;
 
     public function __construct() {
-        $this->db_szerver = "tanulo10.szf1a.oktatas.szamalk-szalezi.hu";
-        $this->db_felhnev = "c1_tanulo10szf1a";
-        $this->db_jelszo = "_tanulo10szf1a";
-        $this->db_nev = "c1ABtanulo10szf1a";
+//        $this->db_szerver = "tanulo10.szf1a.oktatas.szamalk-szalezi.hu";
+//        $this->db_felhnev = "c1_tanulo10szf1a";
+//        $this->db_jelszo = "_tanulo10szf1a";
+//        $this->db_nev = "c1ABtanulo10szf1a";
+        
+        $this->db_szerver = "localhost";
+        $this->db_felhnev = "root";
+        $this->db_jelszo = "";
+        $this->db_nev = "gyakorlo";
         $this->kapcsolat();
     }
 
@@ -39,7 +44,6 @@ class MySqlDB {
 //        $this->kapcsolat();
         $sql = "UPDATE " . $tablaNeve . " SET " . $ujErtekek . " WHERE " . $where;
         
-        echo $sql;
         $sql = $this->kapcs->query($sql);
         if ($sql == true) {
             return true;

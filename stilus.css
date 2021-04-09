@@ -17,17 +17,21 @@
 
 #TODOcim {
     margin: 0;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
 }
 
-#TODOadd {
+#TODOadd, #TODObetolt {
     background-color: #ffb0ff;
     color: white;
     cursor: pointer;
 }
 
-#TODOdatum, #TODOnev, #TODOadd {
+#TODOdatum, #TODOnev, #TODOadd, #TODObetolt, #TODOselect {
     padding: 10px;
+}
+
+#TODOselect {
+    grid-column: 1 / span 3;
 }
 
 #TODOlista {
@@ -42,4 +46,8 @@
     padding-top: 8px;
     padding-bottom: 8px;
     background-color: orange;
+}
+
+#btnTorol, #btnAllapot {
+    cursor: pointer;
 }

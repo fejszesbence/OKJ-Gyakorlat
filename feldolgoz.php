@@ -16,8 +16,8 @@ $siker = $mySqlDB->ujRekord("todo_listak", "(ID, todo, datum, allapot)",
         "( ".$IDSzam.", '".$todoNev."', '".$todoDatum."', 0 )");
 $valasz = "";
 if ($siker) {
-    $valasz = "<li><p>".$todoNev."</p><p>".$todoDatum."</p>"
+    $valasz = "<li id='".$IDSzam."'><p>".$todoNev."</p><p>".$todoDatum."</p>"
             . "<button onclick='torol(".$IDSzam.")' id='btnTorol' type='button'>&#128465;</button>"
-            . "<button onclick='elvegez(".$IDSzam.")' id='btnAllapot' type='button'>&check;</button></li>";
+            . "<button onclick='kesz(".$IDSzam.")' id='btnAllapot' type='button'>&check;</button></li>";
 }
 echo $valasz;
